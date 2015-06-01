@@ -1,23 +1,25 @@
-R.accessToken('PlVfWxWA3xeEP9qwxAXg_A');
-
-R.on('change:accessToken', function() {
-  console.log("we just saw the access token change ",arguments);
-})
-
-R.on('change:authenticated', function() {
-  console.log("we just saw the authentication change ",arguments);
-})
-
-R.on('change:ready', function() {
-  console.log("the app is ready ",arguments);
-})
-
-R.on('cookieError', function() {
-  console.log("i see a cookie error ",arguments);
-})
-$('.cast-button').prop('disabled',true)
 
 var reb = {
+  R.accessToken('PlVfWxWA3xeEP9qwxAXg_A');
+
+  R.on('change:accessToken', function() {
+    console.log("we just saw the access token change ",arguments);
+  })
+
+  R.on('change:authenticated', function() {
+    console.log("we just saw the authentication change ",arguments);
+  })
+
+  R.on('change:ready', function() {
+    console.log("the app is ready ",arguments);
+  })
+
+  R.on('cookieError', function() {
+    console.log("i see a cookie error ",arguments);
+  })
+  $('.cast-button').prop('disabled',true)
+
+
   chromecastApplicationId: 'AFDAB35A',
   start: function() {
     var self = this;
