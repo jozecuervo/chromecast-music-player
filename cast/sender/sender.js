@@ -18,7 +18,7 @@ R.on('cookieError', function() {
 $('.cast-button').prop('disabled',true)
 
 var reb = {
-  chromecastApplicationId: '8A833349',
+  chromecastApplicationId: 'AFDAB35A',
   start: function() {
     var self = this;
     _.bindAll(this, 'startCasting', 'startRdio', 'handleNewSession', 'sendMessage', 'pullDetails');
