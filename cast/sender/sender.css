@@ -24,18 +24,19 @@
   border: 1px solid black;
   display: inline-block;
   padding: 0px 10px;
-  .played {
-    font-size: 10px;
-    color: rgba(87, 87, 180, 1);
-    .detail {
-      font-size: 13px;
-      font-family: monospace;
-      color: rgb(28, 45, 138);
-      padding: 0px 6px;
-      line-height: .2;
-    }
-    .duration {
-      padding-left: 11px;
-    }
-  }
+}
+.history .played {
+  font-size: 10px;
+  color: rgba(87, 87, 180, 1);
+
+}
+.history .played .detail {
+  font-size: 13px;
+  font-family: monospace;
+  color: rgb(28, 45, 138);
+  padding: 0px 6px;
+  line-height: .2;
+}
+.history .played .duration {
+  padding-left: 11px;
 }
